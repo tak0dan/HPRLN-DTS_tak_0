@@ -10,30 +10,29 @@
 </h3>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/JaKooLit/Hyprland-Dots/main/assets/latte.png" width="400" />
+  <img src="https://raw.githubusercontent.com/LinuxBeginnings/Hyprland-Dots/main/assets/latte.png" width="400" />
 </p>
 
 <div align="center">
 <br>
   <a href="#-copying--installation--update-instructions-"><kbd> <br> Installation <br> </kbd></a>&ensp;&ensp;
   <a href="https://www.youtube.com/playlist?list=PLDtGd5Fw5_GjXCznR0BzCJJDIQSZJRbxx"><kbd> <br> Youtube <br> </kbd></a>&ensp;&ensp;
-  <a href="https://github.com/JaKooLit/Hyprland-Dots/wiki"><kbd> <br> Wiki <br> </kbd></a>&ensp;&ensp;
-  <a href="https://github.com/JaKooLit/Hyprland-Dots/discussions"><kbd> <br> Discussions <br> </kbd></a>&ensp;&ensp;
-  <a href="https://github.com/JaKooLit/Hyprland-Dots/wiki/Keybinds"><kbd> <br> Keybinds <br> </kbd></a>&ensp;&ensp;
+  <a href="https://github.com/LinuxBeginnings/Hyprland-Dots/wiki"><kbd> <br> Wiki <br> </kbd></a>&ensp;&ensp;
+  <a href="https://github.com/LinuxBeginnings/Hyprland-Dots/discussions"><kbd> <br> Discussions <br> </kbd></a>&ensp;&ensp;
+  <a href="https://github.com/LinuxBeginnings/Hyprland-Dots/wiki/Keybinds"><kbd> <br> Keybinds <br> </kbd></a>&ensp;&ensp;
   <a href="https://discord.gg/RZJgC7KAKm"><kbd> <br> Discord <br> </kbd></a>
 </div><br>
 
 <div align="center">
 
-![GitHub Repo stars](https://img.shields.io/github/stars/JaKooLit/Hyprland-Dots?style=for-the-badge&color=cba6f7) ![GitHub last commit](https://img.shields.io/github/last-commit/JaKooLit/Hyprland-Dots?style=for-the-badge&color=b4befe) ![GitHub repo size](https://img.shields.io/github/repo-size/JaKooLit/Hyprland-Dots?style=for-the-badge&color=cba6f7) <a href="https://discord.gg/kool-tech-world"> <img src="https://img.shields.io/discord/1151869464405606400?style=for-the-badge&logo=discord&color=cba6f7&link=https%3A%2F%2Fdiscord.gg%kool-tech-world"> </a>
 
 <br/>
 </div>
 
 <h3 align="center">
-  <img src="https://github.com/JaKooLit/Telegram-Animated-Emojis/blob/main/Activity/Sparkles.webp" alt="Sparkles" width="38" height="38" />
+  <img src="https://github.com/LinuxBeginnings/Telegram-Animated-Emojis/blob/main/Activity/Sparkles.webp" alt="Sparkles" width="38" height="38" />
   KooL's Hyprland Dotfiles Showcase 
-  <img src="https://github.com/JaKooLit/Telegram-Animated-Emojis/blob/main/Activity/Sparkles.webp" alt="Sparkles" width="38" height="38" />
+  <img src="https://github.com/LinuxBeginnings/Telegram-Animated-Emojis/blob/main/Activity/Sparkles.webp" alt="Sparkles" width="38" height="38" />
 </h3>
 
 <div align="center">
@@ -60,7 +59,7 @@ https://github.com/user-attachments/assets/49bc12b2-abaf-45de-a21c-67aacd9bb872
 - NOTE: you need package `curl` for this to work
 
 ```bash
-sh <(curl -L https://raw.githubusercontent.com/JaKooLit/Hyprland-Dots/main/Distro-Hyprland.sh)
+sh <(curl -L https://raw.githubusercontent.com/LinuxBeginnings/Hyprland-Dots/main/Distro-Hyprland.sh)
 ```
 
 - You can use the above command to automatically clone the `Distro-Hyprland` install scripts
@@ -70,20 +69,20 @@ sh <(curl -L https://raw.githubusercontent.com/JaKooLit/Hyprland-Dots/main/Distr
 
 - Automated Hyprland Scripts for Distro of choice which will pull this dotfiles if opted to install these configurations
 
-- [Arch-Linux](https://github.com/JaKooLit/Arch-Hyprland)
+- [Arch-Linux](https://github.com/LinuxBeginnings/Arch-Hyprland)
 
-- [OpenSUSE(Tumbleweed)](https://github.com/JaKooLit/OpenSuse-Hyprland)
+- [OpenSUSE(Tumbleweed)](https://github.com/LinuxBeginnings/OpenSuse-Hyprland)
 
-- [Fedora-Linux (43/Rawhide)](https://github.com/JaKooLit/Fedora-Hyprland)
+- [Fedora-Linux (43/Rawhide)](https://github.com/LinuxBeginnings/Fedora-Hyprland)
 
-- [Debian-Linux (Trixie & SID)](https://github.com/JaKooLit/Debian-Hyprland)
+- [Debian-Linux (Trixie & SID)](https://github.com/LinuxBeginnings/Debian-Hyprland)
 
-- [NixOS (25.05+)](https://github.com/JaKooLit/NixOS-Hyprland)
+- [NixOS (25.05+)](https://github.com/LinuxBeginnings/NixOS-Hyprland)
 
-- [Ubuntu 24.04 LTS](https://github.com/JaKooLit/Ubuntu-Hyprland/tree/24.04)
-- [Ubuntu 24.10 (depreciated)](https://github.com/JaKooLit/Ubuntu-Hyprland/tree/24.10)
-- [Ubuntu 25.04 (depreciated)](https://github.com/JaKooLit/Ubuntu-Hyprland/tree/25.04)
-- [Ubuntu 25.10](https://github.com/JaKooLit/Ubuntu-Hyprland/tree/25.10)
+- [Ubuntu 24.04 LTS](https://github.com/LinuxBeginnings/Ubuntu-Hyprland/tree/24.04)
+- [Ubuntu 24.10 (depreciated)](https://github.com/LinuxBeginnings/Ubuntu-Hyprland/tree/24.10)
+- [Ubuntu 25.04 (depreciated)](https://github.com/LinuxBeginnings/Ubuntu-Hyprland/tree/25.04)
+- [Ubuntu 25.10](https://github.com/LinuxBeginnings/Ubuntu-Hyprland/tree/25.10)
 
 ---
 
@@ -95,18 +94,18 @@ sh <(curl -L https://raw.githubusercontent.com/JaKooLit/Hyprland-Dots/main/Distr
 
 ### 👀 Screenshots 👀
 
-- All screenshots are collected here [Screenshots](https://github.com/JaKooLit/screenshots/tree/main/Hyprland-ScreenShots)
+- All screenshots are collected here [Screenshots](https://github.com/LinuxBeginnings/screenshots/tree/main/Hyprland-ScreenShots)
 
 ### 📦 Whats new?
 
-- To easily track changes, I will be updating the [CHANGELOGS](https://github.com/JaKooLit/Hyprland-Dots/wiki/Changelogs) Screenshots will be included if worth mentioning the changes!
+- To easily track changes, I will be updating the [CHANGELOGS](https://github.com/LinuxBeginnings/Hyprland-Dots/wiki/Changelogs) Screenshots will be included if worth mentioning the changes!
 
 > [!NOTE]
 > Kindly note that by default, Kools Dots are adjusted / configured for 2k (1440p) display without scaling.
 
 ### 💥 Copying / Installation / Update instructions 💥
 
-- [`MORE INFO HERE`](https://github.com/JaKooLit/Hyprland-Dots/wiki/Install_&_Update)
+- [`MORE INFO HERE`](https://github.com/LinuxBeginnings/Hyprland-Dots/wiki/Install_&_Update)
   > [!Note]
   > The auto copy script `copy.sh` will create backups of intended directories to be copied. 
   > However, it's still a good idea to manually backup just incase script fails to backup your configuration. 
@@ -121,7 +120,7 @@ sh <(curl -L https://raw.githubusercontent.com/JaKooLit/Hyprland-Dots/main/Distr
 > Note: Ubuntu is exception, it has version specific branches
 
 ```bash
-git clone --depth=1 https://github.com/JaKooLit/Hyprland-Dots.git
+git clone --depth=1 https://github.com/LinuxBeginnings/Hyprland-Dots.git
 cd Hyprland-Dots
 ```
 
@@ -129,7 +128,7 @@ cd Hyprland-Dots
 > Not recommeded for non-testing systems
 
 ```bash
-git clone --depth=1 https://github.com/JaKooLit/Hyprland-Dots.git -b development
+git clone --depth=1 https://github.com/LinuxBeginnings/Hyprland-Dots.git -b development
 cd Hyprland-Dots
 ```
 
@@ -176,7 +175,7 @@ chmod +x upgrade.sh
 
 #### 🛎️ a small note on wallpapers
 
-- by default, only few wallpapers will be copied (1 each dark and light plus 3 more). You will be offered to download more wallpapers. You can preview/check the additional wallpapers from [`THIS`](https://github.com/JaKooLit/Wallpaper-Bank/tree/main/wallpapers) Link
+- by default, only few wallpapers will be copied (1 each dark and light plus 3 more). You will be offered to download more wallpapers. You can preview/check the additional wallpapers from [`THIS`](https://github.com/LinuxBeginnings/Wallpaper-Bank/tree/main/wallpapers) Link
 
 #### ⚠️⚠️⚠️ A MUST! after copying / Installing these dots
 
@@ -185,24 +184,24 @@ chmod +x upgrade.sh
 
 - Nvidia Owners. Make sure to edit your `~/.config/hypr/UserConfigs/ENVariables.conf` (highly recommended).
 
-* NVIDIA users / owners, after installation, check [`THIS`](https://github.com/JaKooLit/Hyprland-Dots/wiki/Notes_to_remember#--for-nvidia-gpu-users)
+* NVIDIA users / owners, after installation, check [`THIS`](https://github.com/LinuxBeginnings/Hyprland-Dots/wiki/Notes_to_remember#--for-nvidia-gpu-users)
 
 - If you have already set your own keybinds, monitors, etc.... Just copy over from backup created before log-out or reboot. (recommended)
 
 #### 📖 Known issues and possible solutions
 
-- check out this page [FAQ](https://github.com/JaKooLit/Hyprland-Dots/wiki/FAQ) and [UNSOLVED ISSUES](https://github.com/JaKooLit/Hyprland-Dots/wiki/Known_Issues)
+- check out this page [FAQ](https://github.com/LinuxBeginnings/Hyprland-Dots/wiki/FAQ) and [UNSOLVED ISSUES](https://github.com/LinuxBeginnings/Hyprland-Dots/wiki/Known_Issues)
 
 #### 🙋 QUESTIONS ?!?! ⁉️
 
 - FAQ! Yes you can use these dotfiles to other distro! Just ensure to install proper packages first! If it makes you feel better, I use same config on my Gentoo:)
 - QUICK HINT! Click the HINT! Waybar module (note only available in Waybar default and Simple-L [TOP] layout). Can be launched by Keybind `SUPER H`
-- More question? click here browse through this [WIKI](https://github.com/JaKooLit/Hyprland-Dots/wiki/)
-- If you want the old configs, it is collected on my "Archive" repo. See [HERE](https://github.com/JaKooLit/Hyprland-Dots-releases-Archive)
+- More question? click here browse through this [WIKI](https://github.com/LinuxBeginnings/Hyprland-Dots/wiki/)
+- If you want the old configs, it is collected on my "Archive" repo. See [HERE](https://github.com/LinuxBeginnings/Hyprland-Dots-releases-Archive)
 
 #### ⌨ Keybinds
 
-- Keybinds [`CLICK`](https://github.com/JaKooLit/Hyprland-Dots/wiki/Keybinds)
+- Keybinds [`CLICK`](https://github.com/LinuxBeginnings/Hyprland-Dots/wiki/Keybinds)
 
 #### 🙏 Special request
 
@@ -211,7 +210,7 @@ chmod +x upgrade.sh
 
 #### ✍️ Contributing
 
-- Want to contribute? Click [`HERE`](https://github.com/JaKooLit/Hyprland-Dots/blob/main/CONTRIBUTING.md) for a guide how to contribute
+- Want to contribute? Click [`HERE`](https://github.com/LinuxBeginnings/Hyprland-Dots/blob/main/CONTRIBUTING.md) for a guide how to contribute
 >  Thanks to all who have contributed code, or support on the Discord server. You efforts are greatly appreciated 
 
 #### 🤷‍♂️ TO DO!
@@ -230,21 +229,16 @@ chmod +x upgrade.sh
 
 - you can also give support through coffee's or btc 😊
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/jakoolit)
 
 or
 
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/JaKooLit)
 
-Or you can donate cryto on my btc wallet :)
 
 > 1N3MeV2dsX6gQB42HXU6MF2hAix1mqjo8i
 
-![Bitcoin](https://github.com/user-attachments/assets/7ed32f8f-c499-46f0-a53c-3f6fbd343699)
 
 ## 🫰 Thank you for the stars 🩷
 
-[![Stargazers over time](https://starchart.cc/JaKooLit/Hyprland-Dots.svg?variant=adaptive)](https://starchart.cc/JaKooLit/Hyprland-Dots)
 
 
 ### Document translations
