@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
+# /* ---- 💫 https://github.com/LinuxBeginnings 💫 ---- */  ##
 # For applying Animations from different users
 
 # Check if rofi is already running

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
+# /* ---- 💫 https://github.com/LinuxBeginnings 💫 ---- */  ##
 
 # For Hyprlock
 #pidof hyprlock || hyprlock -q

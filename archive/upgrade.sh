@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  #
+# /* ---- 💫 https://github.com/LinuxBeginnings 💫 ---- */  #
 # for Semi-Manual upgrading your system.
 # NOTE: requires rsync 
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  #
+# /* ---- 💫 https://github.com/LinuxBeginnings 💫 ---- */  #
 # Purpose:
-#   Orchestrates copying/upgrading JaKooLit's Hyprland dotfiles into ~/.config.
+#   Orchestrates copying/upgrading LinuxBeginnings's Hyprland dotfiles into ~/.config.
 #   Handles interactive prompts, backups/restores, per-app tweaks, and express mode.
 #
 # Layout (high-level; future modularization targets):
@@ -598,7 +598,7 @@ else
     case $WALL in
     [Yy])
       echo "${NOTE} Downloading additional wallpapers..."
-      if git clone "https://github.com/JaKooLit/Wallpaper-Bank.git"; then
+      if git clone "https://github.com/LinuxBeginnings/Wallpaper-Bank.git"; then
         echo "${OK} Wallpapers downloaded successfully." 2>&1 | tee -a "$LOG"
 
         # Check if wallpapers directory exists and create it if not

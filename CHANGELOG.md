@@ -189,7 +189,7 @@
 - Fixed: Not all waybars had `custom/nightlight`
 - Fixed: `Weather.py` cache wasn't updating when UNITS changed from C to F
 - Fixed: Wallpapers with periods in names truncated
-  - https://github.com/JaKooLit/Hyprland-Dots/pull/873
+  - https://github.com/LinuxBeginnings/Hyprland-Dots/pull/873
   - Thanks to @godlyfast for the fix.
 - Fixed: Overview Toggle keyind SUPER + A now properly detects QuickShell
   - If QS `overview` fails, or is not installed, AGS `overview` will be started instead
@@ -210,7 +210,7 @@
 - GameMode.sh / Refresh.sh
   - Enabling / Disabling repeatedly would result in multiple waybars
   - Added additional `sleep` commands in `GameMode.sh` and `Refresh.sh`
-  - Resolves [Issue 870](https://github.com/JaKooLit/Hyprland-Dots/issues/870)
+  - Resolves [Issue 870](https://github.com/LinuxBeginnings/Hyprland-Dots/issues/870)
 
 ## CHANGES:
 
@@ -330,5 +330,5 @@ Key Changes:
 - [SVIGHNESH](https://github.com/SVIGHNESH)
 
 If you have any questions, feel free to contact via
-[GitHub Discussions](https://github.com/JaKooLit/Hyprland-Dots/discussions) or
+[GitHub Discussions](https://github.com/LinuxBeginnings/Hyprland-Dots/discussions) or
 [Through Discord Server](https://discord.gg/kool-tech-world)

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  #
+# /* ---- 💫 https://github.com/LinuxBeginnings 💫 ---- */  #
 # Rofi Themes - Script to preview and apply themes by live-reloading the config.
 
 # --- Configuration ---

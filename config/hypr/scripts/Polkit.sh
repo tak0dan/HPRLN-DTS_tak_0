@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
+# /* ---- 💫 https://github.com/LinuxBeginnings 💫 ---- */  ##
 # This script starts the first available Polkit agent from a list of possible locations
 
 # List of potential Polkit agent file paths

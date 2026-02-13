@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
+# /* ---- 💫 https://github.com/LinuxBeginnings 💫 ---- */  ##
 # Script for keyboard backlights (if supported) using brightnessctl
 
 iDIR="$HOME/.config/swaync/icons"
