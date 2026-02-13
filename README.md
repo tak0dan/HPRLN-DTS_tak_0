@@ -107,14 +107,13 @@ sh <(curl -L https://raw.githubusercontent.com/JaKooLit/Hyprland-Dots/main/Distr
 
 - [`MORE INFO HERE`](https://github.com/JaKooLit/Hyprland-Dots/wiki/Install_&_Update)
   > [!Note]
-  > The auto copy script `copy.sh` will create backups of intended directories to be copied. 
-  > However, it's still a good idea to manually backup just incase script fails to backup your configuration. 
+  > The auto copy script `copy.sh` will create backups of intended directories to be copied.
+  > However, it's still a good idea to manually backup just incase script fails to backup your configuration.
   > If you already have a hyprland configuration, uninstall it first, or create a new user, and install it with that user
-  
-- Clone this repo by using `git`. 
-- Change directory, i.e. `cd Arch-Hyprland`  
-- Make `install.sh` executable  `chmod +x ./install.sh` 
-- Run the script `./install.sh` 
+- Clone this repo by using `git`.
+- Change directory, i.e. `cd Arch-Hyprland`
+- Make `install.sh` executable `chmod +x ./install.sh`
+- Run the script `./install.sh`
 
 > To download from Master branch
 > Note: Ubuntu is exception, it has version specific branches
@@ -211,7 +210,7 @@ chmod +x upgrade.sh
 #### ✍️ Contributing
 
 - Want to contribute? Click [`HERE`](https://github.com/JaKooLit/Hyprland-Dots/blob/main/CONTRIBUTING.md) for a guide how to contribute
->  Thanks to all who have contributed code, or support on the Discord server. You efforts are greatly appreciated 
+  > Thanks to all who have contributed code, or support on the Discord server. You efforts are greatly appreciated
 
 #### 🤷‍♂️ TO DO!
 
@@ -226,25 +225,6 @@ chmod +x upgrade.sh
 - a Star on my Github repos would be nice 🌟
 
 - Subscribe to my Youtube Channel [YouTube](https://www.youtube.com/@Ja.KooLit)
-
-- you can also give support through coffee's or btc 😊
-
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/jakoolit)
-
-or
-
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/JaKooLit)
-
-Or you can donate cryto on my btc wallet :)
-
-> 1N3MeV2dsX6gQB42HXU6MF2hAix1mqjo8i
-
-![Bitcoin](https://github.com/user-attachments/assets/7ed32f8f-c499-46f0-a53c-3f6fbd343699)
-
-## 🫰 Thank you for the stars 🩷
-
-[![Stargazers over time](https://starchart.cc/JaKooLit/Hyprland-Dots.svg?variant=adaptive)](https://starchart.cc/JaKooLit/Hyprland-Dots)
-
 
 ### Document translations
 
