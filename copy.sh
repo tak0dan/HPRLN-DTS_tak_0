@@ -415,18 +415,40 @@ printf "\n%.0s" {1..1}
 printf "${INFO} - Copying dotfiles ${SKY_BLUE}second${RESET} part\n"
 copy_phase2 "$LOG"
 printf "\\n%.0s" {1..1}
-# Non-express upgrades: copy waybar-weather config and optionally set units
-if [ "$UPGRADE_MODE" -eq 1 ] && [ "$EXPRESS_MODE" -eq 0 ]; then
-  WAYBAR_WEATHER_SRC="$DOTFILES_DIR/config/waybar-weather"
-  WAYBAR_WEATHER_DEST="$HOME/.config/waybar-weather"
+# waybar-weather config handling:
+# - install (fresh copy): always overwrite and prompt for units
+# - upgrade (non-express): copy only if missing; prompt only if copied
+# - express: copy only if missing; never prompt
+WAYBAR_WEATHER_SRC="$DOTFILES_DIR/config/waybar-weather"
+WAYBAR_WEATHER_DEST="$HOME/.config/waybar-weather"
+WAYBAR_WEATHER_COPIED=0
+
+if [ "$RUN_MODE" = "install" ]; then
   if [ -d "$WAYBAR_WEATHER_SRC" ]; then
-    echo "${INFO} - Copying waybar-weather config for upgrade" 2>&1 | tee -a "$LOG"
+    echo "${INFO} - Copying waybar-weather config (fresh copy)" 2>&1 | tee -a "$LOG"
+    rm -rf "$WAYBAR_WEATHER_DEST"
     mkdir -p "$WAYBAR_WEATHER_DEST"
     cp -r "$WAYBAR_WEATHER_SRC/." "$WAYBAR_WEATHER_DEST/" 2>&1 | tee -a "$LOG"
+    WAYBAR_WEATHER_COPIED=1
   else
     echo "${WARN} - waybar-weather config not found at $WAYBAR_WEATHER_SRC" 2>&1 | tee -a "$LOG"
   fi
+elif [ "$RUN_MODE" = "upgrade" ] || [ "$RUN_MODE" = "express" ]; then
+  if [ -d "$WAYBAR_WEATHER_DEST" ]; then
+    echo "${INFO} - waybar-weather config exists; skipping copy" 2>&1 | tee -a "$LOG"
+  else
+    if [ -d "$WAYBAR_WEATHER_SRC" ]; then
+      echo "${INFO} - Copying waybar-weather config" 2>&1 | tee -a "$LOG"
+      mkdir -p "$WAYBAR_WEATHER_DEST"
+      cp -r "$WAYBAR_WEATHER_SRC/." "$WAYBAR_WEATHER_DEST/" 2>&1 | tee -a "$LOG"
+      WAYBAR_WEATHER_COPIED=1
+    else
+      echo "${WARN} - waybar-weather config not found at $WAYBAR_WEATHER_SRC" 2>&1 | tee -a "$LOG"
+    fi
+  fi
+fi
 
+if [ "$EXPRESS_MODE" -eq 0 ] && [ "$WAYBAR_WEATHER_COPIED" -eq 1 ]; then
   while true; do
     read -r -p "${CAT} Use Fahrenheit (F) or Celsius (C)? [C]: " WEATHER_UNITS
     WEATHER_UNITS=$(echo "${WEATHER_UNITS}" | tr '[:upper:]' '[:lower:]')
