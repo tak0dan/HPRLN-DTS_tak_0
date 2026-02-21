@@ -13,6 +13,9 @@ for ctl in "${ctlcheck[@]}"; do
 done
 
 if (( ${#missing[@]} )) 2>/dev/null; then
+  if printf '%s\n' "${missing[@]}" | grep -qx "pactl"; then
+    notify-send -a "t1" -r 91190 -t 2000 -i "${swayIconDir}/volume-low.png" "ERROR: pactl not installed" "Install 'pactl' (pulseaudio-utils or pipewire-pulse)."
+  fi
   echo "Missing required dependencies: \"${missing[*]}\""
   exit 1
 fi
