@@ -5,6 +5,7 @@
 - Added script from `@ivy` and `@sl1ng` to Toggle audio on active Wundow
   - `$HOME/.config/hypr/scripts/Toggle-Active-Window-Audio.sh`
   - Keybind is `SUPER + SHIFT + H` (hush)
+  - Added check for `pactl` otherwise it fails silently 
 - Added check for ubunutu v26.04 in startup
   - For as of yet unknown reason waybar won't startup without this
   ```
