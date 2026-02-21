@@ -40,7 +40,7 @@ mapfile -t sink_ids < <(jq -r --arg pid "${__pid}" --arg class "${__class}" --ar
   or
   (lc(.properties["application.process.binary"]) | contains(lc($class)))
   or
-  ((normalize(lc(.properties["media.name"])) | test(normalize(lc($title)))))
+  (normalize(lc(.properties["media.name"])) | contains(normalize(lc($title))))
   ) | .index' <<< "${sink_json}"
 )
 

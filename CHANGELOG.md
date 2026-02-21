@@ -2,6 +2,16 @@
 
 ## v2.3.21
 
+- Added script from `@ivy` and `@sl1ng` to Toggle audio on active Wundow
+  - `$HOME/.config/hypr/scripts/Toggle-Active-Window-Audio.sh`
+  - Keybind is `SUPER + SHIFT + H` (hush)
+- Added check for ubunutu v26.04 in startup
+  - For as of yet unknown reason waybar won't startup without this
+  ```
+  exec-once = /usr/libexec/xdg-desktop-portal-hyprland &
+  exec-once = /usr/libexec/xdg-desktop-portal &
+  exec-once = waybar
+  ```
 - Updated `waybar-weather`
   - Created default files in `.config/waybar-weather`
     - You can manually override settings or providers
