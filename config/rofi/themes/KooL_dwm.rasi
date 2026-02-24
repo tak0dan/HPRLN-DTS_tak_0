@@ -64,8 +64,6 @@ element-icon {
     size: 30;
 }
 
-    background-color: @accent;
-
 inputbar {
     children: [prompt, entry];
 }
