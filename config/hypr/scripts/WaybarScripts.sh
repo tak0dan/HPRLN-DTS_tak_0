@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
-# /* ---- 💫 https://github.com/LinuxBeginnings 💫 ---- */  #
+# ==================================================
+#  KoolDots (2026)
+#  Project URL: https://github.com/LinuxBeginnings
+#  License: GNU GPLv3
+#  SPDX-License-Identifier: GPL-3.0-or-later
+# ==================================================
 # This file used on waybar modules sourcing defaults set in $HOME/.config/hypr/UserConfigs/01-UserDefaults.conf
 
 # Define the path to the config file

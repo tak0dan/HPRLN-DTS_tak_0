@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
-# /* ---- 💫 https://github.com/LinuxBeginnings 💫 ---- */  ##
+# ==================================================
+#  KoolDots (2026)
+#  Project URL: https://github.com/LinuxBeginnings
+#  License: GNU GPLv3
+#  SPDX-License-Identifier: GPL-3.0-or-later
+# ==================================================
 # Initialize J/K keybinds so they always cycle windows globally (no layout-specific behavior)
 # This avoids double-actions when layouts change.
 

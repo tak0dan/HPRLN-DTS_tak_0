@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
-# /* ---- 💫 https://github.com/LinuxBeginnings 💫 ---- */  ##
+# ==================================================
+#  KoolDots (2026)
+#  Project URL: https://github.com/LinuxBeginnings
+#  License: GNU GPLv3
+#  SPDX-License-Identifier: GPL-3.0-or-later
+# ==================================================
 # This is for custom version of waybar idle_inhibitor which activates / deactivates hypridle instead
 
 PROCESS="hypridle"
