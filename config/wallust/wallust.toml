@@ -64,3 +64,7 @@ quickshell.target = '~/.config/quickshell/qml_color.json'
 
 #zathura.template = 'colors-zathura'
 #zathura.target = '~/.config/zathura/zathurarc'
+
+btop.template = 'colors-btop.theme'
+btop.target = '~/.config/btop/themes/wallust.theme'
+
