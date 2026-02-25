@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
+# ==================================================
+#  KoolDots (2026)
+#  Project URL: https://github.com/LinuxBeginnings
+#  License: GNU GPLv3
+#  SPDX-License-Identifier: GPL-3.0-or-later
+# ==================================================
 # Backup helper utilities shared by copy.sh (and future scripts).
 
 # Create a unique backup directory name with month, day, hours, and minutes.
