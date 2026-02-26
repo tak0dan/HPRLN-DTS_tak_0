@@ -50,7 +50,10 @@ set_brightness() {
 
 json_output() {
   local current max percent icon
-  read -r current max < <(get_brightness) || return 1
+  if ! read -r current max < <(get_brightness); then
+    printf '{"text":"󰃜 N/A","tooltip":"External brightness unavailable (load i2c-dev, allow i2c access)","class":"brightness-external-off"}\n'
+    return 0
+  fi
   percent=$(( current * 100 / max ))
   if (( percent >= 80 )); then
     icon="󰃠"
