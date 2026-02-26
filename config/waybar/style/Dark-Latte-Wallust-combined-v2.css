@@ -58,7 +58,7 @@ tooltip {
 
 #taskbar button,   
 #workspaces button {
-    color: @foreground;
+    color: @color15;
     box-shadow: none;
 	text-shadow: none;
     border-radius: 30px;
@@ -262,7 +262,7 @@ tooltip {
 }
 
 #clock {
-	color: @foreground;
+	color: @color15;
     border-radius: 15px;
 }
 
