@@ -119,7 +119,7 @@ tooltip {
     border-radius: 25px;
     padding: 0px 10px 0px 10px;
     margin: 5px;
-    opacity:0.8;
+    opacity: 1;
     border:2px solid @border-color;
 
 }
@@ -212,7 +212,7 @@ tooltip {
 #workspaces button {
     border-radius: 15px;
     border:0px;
-    color: @color13;
+    color: @color15;
     padding-left: 2px;
     padding-right: 2px;
     animation: gradient_f 20s ease-in infinite;

@@ -119,7 +119,7 @@ tooltip {
 	background-color: @background-module;
     border-radius: 25px;
     margin: 5px 5px 5px 5px;
-    opacity:0.8;
+    opacity: 1;
    	padding-top: 4px;
 	padding-bottom: 4px;
 	padding-right: 6px;
@@ -214,7 +214,7 @@ tooltip {
     margin: 1px 1px;
     border-radius: 15px;
     border:0px;
-    color: @color13;
+    color: @color15;
     padding-left: 2px;
     padding-right: 2px;
     animation: gradient_f 20s ease-in infinite;

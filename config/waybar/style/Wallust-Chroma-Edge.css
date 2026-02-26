@@ -50,7 +50,7 @@ tooltip label{
 #taskbar button,
 #workspaces button {
     background-color: transparent;
-    color: grey;
+    color: @color15;
     box-shadow: none;
 	text-shadow: none;
     padding: 0px;
@@ -63,7 +63,8 @@ tooltip label{
 
 #workspaces button.active {
     background-color: transparent;
-    color: #D3D3D3;
+\tcolor: @color15;
+
     padding-left: 8px;
     padding-right: 8px;
     animation: gradient_f 20s ease-in infinite;
@@ -143,7 +144,7 @@ tooltip label{
 #custom-weather.showyIcyDay,
 #custom-weather.snowyIcyNight,
 #custom-weather.sunnyDay {
-	color: #e5e5e5;
+\tcolor: @color15;
 	/* color: #bf616a; */
 	border-radius: 12px;
 	background-color: rgba(50, 50, 50, 0.1);
