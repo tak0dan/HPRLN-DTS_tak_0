@@ -53,12 +53,12 @@ tooltip {
     border-bottom: 2px solid @border-color;
     font-weight: bold;
     font-style: normal;
-    opacity: 0.8;
+    opacity: 1;
 }
 
 #taskbar button,   
 #workspaces button {
-    color: @foreground;
+    color: @color15;
     box-shadow: none;
 	text-shadow: none;
     border-radius: 30px;
@@ -169,7 +169,7 @@ tooltip {
 #custom-weather.showyIcyDay,
 #custom-weather.snowyIcyNight,
 #custom-weather.sunnyDay {
-    color: @foreground;
+    color: @color15;
 	padding-right: 6px;
 	padding-left: 6px;;
 }
@@ -262,7 +262,7 @@ tooltip {
 }
 
 #clock {
-	color: @foreground;
+	color: @color15;
     border-radius: 15px;
 }
 

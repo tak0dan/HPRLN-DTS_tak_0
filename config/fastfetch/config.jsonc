@@ -118,7 +118,7 @@
         },
         {
         "type": "command",
-        "key": "             KoolDots Ver ",
+        "key": "                 KoolDots ",
         "text": "echo v${DOTS_VERSION}",
         "keyColor": "magenta"
         },

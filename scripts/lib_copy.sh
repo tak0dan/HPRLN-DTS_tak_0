@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
+# ==================================================
+#  KoolDots (2026)
+#  Project URL: https://github.com/LinuxBeginnings
+#  License: GNU GPLv3
+#  SPDX-License-Identifier: GPL-3.0-or-later
+# ==================================================
 # Copy helpers split into phases to keep copy.sh lean.
 
 copy_phase1() {
@@ -342,6 +348,9 @@ restore_user_configs() {
   local log="$1"
   local express_mode="$2"
   local old_version="$3"
+  if [ "${RUN_MODE:-}" = "install" ]; then
+    return
+  fi
 
   local DIRPATH="$HOME/.config/hypr"
   local BACKUP_DIR
@@ -353,15 +362,7 @@ restore_user_configs() {
     exit 1
   fi
 
-  # In express mode we still want to run the de-dupe logic, but we skip
-  # the interactive restoration prompts so the workflow stays non-blocking.
-  local SKIP_RESTORE_PROMPTS=0
-  if [ -d "$BACKUP_DIR_PATH" ] && [ "$express_mode" -eq 1 ]; then
-    echo "${NOTE:-[NOTE]} Express mode: skipping UserConfigs restoration prompts." 2>&1 | tee -a "$log"
-    SKIP_RESTORE_PROMPTS=1
-  fi
-
-  if [ -d "$BACKUP_DIR_PATH" ] && [ "$SKIP_RESTORE_PROMPTS" -eq 0 ]; then
+  if [ -d "$BACKUP_DIR_PATH" ]; then
     local VERSION_FILE
     VERSION_FILE=$(find "$DIRPATH" -maxdepth 1 -name "v*.*.*" | head -n 1)
     local CURRENT_VERSION="999.9.9"
@@ -370,6 +371,10 @@ restore_user_configs() {
     fi
 
     local TARGET_VERSION="2.3.19"
+    local AUTO_RESTORE=0
+    if version_gte "$CURRENT_VERSION" "2.3.18"; then
+      AUTO_RESTORE=1
+    fi
 
     echo -e "${NOTE:-[NOTE]} Restoring previous ${MAGENTA:-}User-Configs${RESET:-}... " 2>&1 | tee -a "$log"
     printf "${WARNING:-}\\
@@ -382,13 +387,19 @@ restore_user_configs() {
 " >&2
 
     if version_gte "$CURRENT_VERSION" "$TARGET_VERSION"; then
-      read -r -p "${CAT:-[ACTION]} Do you want to restore your previous UserConfigs directory? (Y/n): " restore_userconfigs_dir
-      if [[ "$restore_userconfigs_dir" != [Nn]* ]]; then
-        echo "${NOTE:-[NOTE]} Restoring UserConfigs directory..." 2>&1 | tee -a "$log"
+      if [ "$express_mode" -eq 1 ] || [ "$AUTO_RESTORE" -eq 1 ]; then
+        echo "${NOTE:-[NOTE]} Restoring UserConfigs directory automatically." 2>&1 | tee -a "$log"
         rsync -a "$BACKUP_DIR_PATH/" "$DIRPATH/UserConfigs/" 2>&1 | tee -a "$log"
         echo "${OK:-[OK]} - UserConfigs directory restored." 2>&1 | tee -a "$log"
       else
-        echo "${NOTE:-[NOTE]} - Skipped restoring UserConfigs." 2>&1 | tee -a "$log"
+        read -r -p "${CAT:-[ACTION]} Do you want to restore your previous UserConfigs directory? (Y/n): " restore_userconfigs_dir
+        if [[ "$restore_userconfigs_dir" != [Nn]* ]]; then
+          echo "${NOTE:-[NOTE]} Restoring UserConfigs directory..." 2>&1 | tee -a "$log"
+          rsync -a "$BACKUP_DIR_PATH/" "$DIRPATH/UserConfigs/" 2>&1 | tee -a "$log"
+          echo "${OK:-[OK]} - UserConfigs directory restored." 2>&1 | tee -a "$log"
+        else
+          echo "${NOTE:-[NOTE]} - Skipped restoring UserConfigs." 2>&1 | tee -a "$log"
+        fi
       fi
     else
       echo -e "${NOTE:-[NOTE]} Detected version ${YELLOW:-}v$CURRENT_VERSION${RESET:-} (older than v$TARGET_VERSION). Using legacy restoration mode." 2>&1 | tee -a "$log"
@@ -419,18 +430,25 @@ restore_user_configs() {
             echo "${OK:-[OK]} - Migrated overlay for ${YELLOW:-}$FILE_NAME${RESET:-}" 2>&1 | tee -a "$log"
             continue
           fi
-
-          printf "\n${INFO:-[INFO]} Found ${YELLOW:-}$FILE_NAME${RESET:-} in hypr backup...\n"
-          read -r -p "${CAT:-[ACTION]} Do you want to restore ${YELLOW:-}$FILE_NAME${RESET:-} from backup? (Y/n): " file_restore
-
-          if [[ "$file_restore" != [Nn]* ]]; then
+          if [ "$express_mode" -eq 1 ] || [ "$AUTO_RESTORE" -eq 1 ]; then
             if cp "$BACKUP_FILE" "$DIRPATH/UserConfigs/$FILE_NAME"; then
               echo "${OK:-[OK]} - $FILE_NAME restored!" 2>&1 | tee -a "$log"
             else
               echo "${ERROR:-[ERROR]} - Failed to restore $FILE_NAME!" 2>&1 | tee -a "$log"
             fi
           else
-            echo "${NOTE:-[NOTE]} - Skipped restoring $FILE_NAME." 2>&1 | tee -a "$log"
+            printf "\n${INFO:-[INFO]} Found ${YELLOW:-}$FILE_NAME${RESET:-} in hypr backup...\n"
+            read -r -p "${CAT:-[ACTION]} Do you want to restore ${YELLOW:-}$FILE_NAME${RESET:-} from backup? (Y/n): " file_restore
+
+            if [[ "$file_restore" != [Nn]* ]]; then
+              if cp "$BACKUP_FILE" "$DIRPATH/UserConfigs/$FILE_NAME"; then
+                echo "${OK:-[OK]} - $FILE_NAME restored!" 2>&1 | tee -a "$log"
+              else
+                echo "${ERROR:-[ERROR]} - Failed to restore $FILE_NAME!" 2>&1 | tee -a "$log"
+              fi
+            else
+              echo "${NOTE:-[NOTE]} - Skipped restoring $FILE_NAME." 2>&1 | tee -a "$log"
+            fi
           fi
         fi
       done

@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
+# ==================================================
+#  KoolDots (2026)
+#  Project URL: https://github.com/LinuxBeginnings
+#  License: GNU GPLv3
+#  SPDX-License-Identifier: GPL-3.0-or-later
+# ==================================================
 # WaybarCava.sh — safer single-instance handling, cleanup, and robustness
 # Original concept by LinuxBeginnings; this variant focuses on lifecycle hardening.
 
