@@ -1,22 +1,25 @@
 # Changelog — JAK's Hyprland Dotfiles
 
-
 ## v2.3.22
-- Fixed many of the WALLUST based waybars 
-  - Foreground/background colors were same light color 
-- Kitty now has a "No color" theme option 
+
+- Fixed many of the WALLUST based waybars color issues
+  - Foreground/background colors were same light color
+- Kitty now has a "No color" theme option
 - Updated the Headers in the scripts to:
-  - "KoolDots"
+  - KoolDots
   - Added Project name and URL
-  - Added License info GPLv3 to each file also 
--  ENVvariables file had both QT5CT and QT6CT variables
-   
-    ```
-    #Added style ENV for kvantum
+  - Added License info GPLv3 to each file also
+- Added new Rofi themes:
+  - dwm Horizontal (old classic dmenu style)
+  - dwm Vertical (dmenu with small dropdown list)
+  - TokyoNight
+- Changed `fastfetch` dotfiles name to `KoolDots`
+- ENVvariables file had both QT5CT and QT6CT variables
+  `     #Added style ENV for kvantum
     env = QT_QPA_PLATFORMTHEME,qt6ct
     env = QT_STYLE_OVERRIDE,kvantum
-    ```
-> Note: Not sure how will this will work as I don't normally use kvantum 
+    `
+  > Note: Not sure how will this will work as I don't normally use kvantum
 
 ## v2.3.21
 
