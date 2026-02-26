@@ -1,5 +1,23 @@
 # Changelog — JAK's Hyprland Dotfiles
 
+
+## v2.3.22
+- Fixed many of the WALLUST based waybars 
+  - Foreground/background colors were same light color 
+- Kitty now has a "No color" theme option 
+- Updated the Headers in the scripts to:
+  - "KoolDots"
+  - Added Project name and URL
+  - Added License info GPLv3 to each file also 
+-  ENVvariables file had both QT5CT and QT6CT variables
+   
+    ```
+    #Added style ENV for kvantum
+    env = QT_QPA_PLATFORMTHEME,qt6ct
+    env = QT_STYLE_OVERRIDE,kvantum
+    ```
+> Note: Not sure how will this will work as I don't normally use kvantum 
+
 ## v2.3.21
 
 - Added script from `@ivy` and `@sl1ng` to Toggle audio on active Wundow
